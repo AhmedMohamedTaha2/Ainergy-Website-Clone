@@ -1,0 +1,488 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: none;
+}
+body {
+  background-color: black;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* start Nav Bar */
+.navBar {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0px;
+  position: sticky;
+  top: 0;
+}
+.navBar .logo {
+  width: 20%;
+  padding: 0% 5%;
+}
+.navBar .logo img {
+  width: 100%;
+}
+.navBar .links {
+  width: 10%;
+  padding: 0% 5%;
+}
+.navBar .links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+}
+.navBar .links ul a {
+  text-decoration: none;
+  color: #fff7f7;
+  transition: 0.8s;
+  /* font-size: large; */
+}
+.navBar .links ul a:hover {
+  color: #ed893d;
+}
+/*End Nav Bar */
+/* .navBar .hidden .linkss {
+  display: none;
+}
+
+.navBar .hidden .linkss ul {
+  display: none;
+} */
+/*Start Body */
+.navBar .hidden {
+  position: relative;
+  display: none;
+}
+.body .sec1 {
+  width: 100%;
+  background-color: #ed893d;
+  background-image: url(../img/welcome.jpg);
+  height: 800px;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10px;
+}
+.body .sec1 .layout {
+  width: 100%;
+  height: 100%;
+  background-color: #0000003a;
+}
+.body .sec2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+}
+.body .sec2 h2 {
+  font-size: 60px;
+  margin: 50px 0px;
+  font-weight: lighter;
+}
+.body .sec2 .sec2Cards {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  margin: 50px;
+}
+.body .sec2 .sec2Cards .card {
+  background-color: #e9e9e9;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.154);
+  border-radius: 15px;
+  transition: 0.8s;
+  font-size: larger;
+}
+.body .sec2 .sec2Cards .card:hover {
+  transition-duration: 0.9s;
+  box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.194);
+}
+.body .sec2 .sec2Cards .card img {
+  width: 20%;
+}
+.body .sec3 {
+  background-image: url(../img/bg.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
+}
+/*.body .sec3*/
+.layout {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.body .sec3 .layout .content {
+  width: 80%;
+  margin: 10% 10%;
+  /* background-color: #252525; */
+  display: flex;
+  align-items: center;
+}
+.body .sec3 .layout .content .img {
+  width: 80%;
+  margin-left: 20%;
+}
+.body .sec3 .layout .content .img img {
+  width: 90%;
+  /* margin-bottom: 20px; */
+  /* margin-top: 20px; */
+  animation-name: updown;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes updown {
+  form {
+    margin-top: 20px;
+  }
+  to {
+    margin-bottom: 40px;
+  }
+}
+.body .sec3 .layout .content .text {
+  width: 80%;
+  margin-right: 20%;
+  font-size: 40px;
+}
+.body .sec3 .layout .content .text span {
+  font-weight: bold;
+}
+.body .sec3 .layout .content .text .logo {
+  width: 80%;
+}
+
+.body .sec4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 800px;
+  padding: 10px;
+  padding-top: 30px;
+}
+.body .sec4 h2 {
+  font-size: 60px;
+  margin: 50px 0px;
+  font-weight: lighter;
+}
+.body .sec4 .sec4cards {
+  width: 80%;
+  margin: 10px 50px;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #252525; */
+}
+.body .sec4 .sec4cards .card {
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  height: 100%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.019);
+  border-radius: 15px;
+}
+.body .sec4 .sec4cards .card:hover {
+  transition-duration: 0.9s;
+  box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.194);
+}
+.body .sec4 .sec4cards .card img {
+  width: 20%;
+}
+.body .sec4 .sec4cards .card h3 {
+  font-weight: lighter;
+  font-size: larger;
+  margin-top: 10px;
+}
+.sec5 {
+  background-image: url(../img/vission.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
+}
+.sec5 .layout .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec5 .layout .content img {
+  width: 100%;
+}
+.sec5 .layout .content h2 {
+  font-size: 60px;
+  margin: 5px 0px;
+}
+.sec5 .layout .content h5 {
+  font-size: 20px;
+}
+.sec6 {
+  width: 100%;
+  height: 100vh;
+  color: #252525;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+.sec6 img {
+  width: 50%;
+}
+.sec6 h2 {
+  font-size: 60px;
+  margin: 5px 0px;
+  font-weight: lighter;
+}
+.body .sec7 {
+  width: 100%;
+  height: 80vh;
+  color: #252525;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body .sec7 h2 {
+  font-size: 60px;
+  margin: 5px 0px;
+  font-weight: lighter;
+}
+.body .sec7 .sec7cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1% 5%;
+  padding: 10px;
+}
+.body .sec7 .sec7cards .card {
+  background-color: white;
+  width: 80%;
+  margin-left: 35px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.243);
+  border-radius: 15px;
+}
+.body .sec7 .sec7cards .card:hover {
+  transition-duration: 0.9s;
+  box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.194);
+}
+.body .sec7 .sec7cards .card img {
+  width: 100%;
+}
+.body .sec7 .sec7cards .card .text {
+  width: 90%;
+  margin: 10px;
+  font-size: larger;
+  background-color: white;
+}
+.body .sec7 .sec7cards .card .text p {
+  text-align: center;
+}
+.body .sec7 .sec7cards .card .smalltext {
+  width: 90%;
+  margin: 0% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.body .sec7 .sec7cards .card .smalltext span:hover {
+  transition-duration: 0.9s;
+  color: #ed893d;
+  font-weight: bold;
+}
+.body .sec8 {
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  color: #252525;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.body .sec8 h2 {
+  font-size: 60px;
+
+  font-weight: lighter;
+}
+.body .sec8 .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: #ffffffae;
+  /* border: 10px solid black;  */
+  margin-top: 20px;
+}
+.body .sec8 .content .info {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff63;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  /* background-color: #ed893d; */
+}
+.body .sec8 .content .info .infocard {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 200;
+  /* background-color: #ed893d; */
+}
+.body .sec8 .content .info .infocard i {
+  font-size: large;
+  margin-right: 40px;
+}
+.body .sec8 .content .info .infocard iframe {
+  width: 90%;
+  height: 240px;
+}
+.body .sec8 .content .form {
+  width: 50%;
+  height: 90%;
+  border-left: 2px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+.body .sec8 .content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.body .sec8 .content form input {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.157);
+  border-radius: 10px;
+}
+.body .sec8 .content form input:focus {
+  outline: none;
+  transition-duration: 0.9s;
+  box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ed893da9;
+}
+.footer {
+  color: #e9e9e9;
+  background-color: #252525;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .links {
+  width: 35%;
+  margin: 15px;
+  text-align: center;
+}
+.footer .links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 25px;
+}
+.footer .links ul li a i {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.rights {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 12vh;
+  padding: 1vh;
+  font-size: 20px;
+  background-color: #000000;
+}
+
+.rights p {
+  width: 30%;
+  height: 30px;
+  margin-left: 35%;
+  border: 2px solid rgba(0, 0, 0, 0.157);
+  border-radius: 10px;
+}
+.rights span img {
+  width: 100px;
+}
+
+/*end Body */
+.rights h2 {
+  font-size: 14px;
+}
+.rights h2 span {
+  color: #ed893d;
+}
+.navBar .links {
+  font-size: 14px;
+  width: 40%;
+  padding: 0% 5%;
+}
+
+.sec5 .layout .content h5 {
+  font-size: 20px;
+  text-align: center;
+}
+.body .sec7 .sec7cards .card .smalltext {
+  width: 90%;
+  margin: 11% 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+/* !end default media query for my pc screen  which is 1680 px  */
